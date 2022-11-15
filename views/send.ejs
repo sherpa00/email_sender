@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-size: 26px;
+            color: green;
+            margin: 20px 0px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            border-radius: 5px;
+            padding: 25px 10px;
+            width: 500px;
+            height: auto;
+            margin: auto;
+        }
+
+        form label {
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 3px;
+            text-align: left;
+        }
+
+        form input {
+            width: 95%;
+            font-size: 18px;
+            padding: 8px 10px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+        }
+
+        form textarea {
+            width: 100%;
+            height: 300px;
+            border: 1px solid gray;
+            font-size: 18px;
+            resize: none;
+        }
+
+        form button {
+            font-size: 20px;
+            padding: 10px 25px;
+            margin-top: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            color: black;
+            background-color: rgb(58, 194, 58);
+        }
+
+        form button:hover {
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>
+        Here Send Your emial to anyone
+    </h2>
+
+    <form action="/send" method="post" onsubmit="alert('Email Sent Successfully.')">
+        <label for="from">
+            Your Email: 
+        </label>
+        <input type="text" id=""from" name="from" placeholder="xyz@gamil.com" required/>
+
+        <label for="to">
+            Recievers Email: 
+        </label>
+        <input type="text" id=""to" name="to" placeholder="abc@gamil.com" required/>
+
+        <label for="subject">
+            Email Subject: 
+        </label>
+        <input type="text" id=""subject" name="subject" placeholder="homework,work reports,etc..." required/>
+
+        <label for="email_text">
+            Email Text: 
+        </label>
+        <textarea type="text" id=""email_text" name="email_text" placeholder="xyz@gamil.com" required></textarea>
+
+        <button type="submit">
+            Send Email
+        </button>
+
+    </form>
+</body>
+</html>
